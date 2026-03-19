@@ -76,10 +76,10 @@
 
         base {
             bindings = <
-                &mt TILDE Q  &kp W  &kp E         &kp R      &kp T    &kp Y  &kp U          &kp I      &kp O    &kp P
-                &hr LA(A) A  &kp S  &hr LC(D) D   &kp F      &kp G    &kp H  &kp J          &kp K      &kp L    &kp SEMI
-&kp LEFT_SHIFT  &kp Z        &kp X  &kp C         &kp V      &kp B    &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &bt BT_NXT
-                                    &kp LEFT_GUI  &kp SPACE  &none    &mo 1  &kp BACKSPACE  &none
+       &mt TILDE Q  &kp W  &kp E         &kp R      &kp T             &kp Y  &kp U          &kp I      &kp O    &kp P
+       &hr LA(A) A  &kp S  &hr LC(D) D   &kp F      &kp G             &kp H  &kp J          &kp K      &kp L    &kp SEMI
+&none  &kp Z        &kp X  &kp C         &kp V      &kp B             &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &bt BT_NXT
+                           &kp LEFT_GUI  &kp SPACE  &kp LEFT_SHIFT    &mo 1  &kp BACKSPACE  &none
             >;
         };
 
