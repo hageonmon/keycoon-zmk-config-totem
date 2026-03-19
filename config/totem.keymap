@@ -81,19 +81,19 @@
 
         base {
             bindings = <
-            &mt TILDE Q     &kp W  &kp E               &kp R      &kp T             &kp Y  &kp U          &kp I      &kp O    &kp P
-            &hr LEFT_ALT A  &kp S  &hr LEFT_CONTROL D  &kp F      &kp G             &kp H  &kp J          &kp K      &kp L    &kp SEMI
-&bt BT_NXT  &kp Z           &kp X  &kp C               &kp V      &kp B             &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
-                                   &kp LEFT_GUI        &kp SPACE  &kp LEFT_SHIFT    &mo 1  &kp BACKSPACE  &none
+       &mt TILDE Q     &kp W  &kp E               &kp R      &kp T             &kp Y  &kp U          &kp I      &kp O    &kp P
+       &hr LEFT_ALT A  &kp S  &hr LEFT_CONTROL D  &kp F      &kp G             &kp H  &kp J          &kp K      &kp L    &kp SEMI
+&none  &kp Z           &kp X  &kp C               &kp V      &kp B             &kp N  &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
+                              &kp LEFT_GUI        &kp SPACE  &kp LEFT_SHIFT    &mo 1  &kp BACKSPACE  &none
             >;
         };
 
         NUM {
             bindings = <
-        &none   &none   &trans  &trans  &trans    &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
-        &trans  &trans  &trans  &trans  &trans    &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp LEFT      &kp RIGHT
-&trans  &trans  &trans  &none   &trans  &trans    &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp NUMBER_0  &trans     &PW1
-                        &trans  &trans  &trans    &trans           &trans           &none
+              &none         &none         &trans  &trans  &trans    &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
+              &trans        &trans        &trans  &trans  &trans    &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp LEFT      &kp RIGHT
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &trans  &trans    &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp NUMBER_0  &trans     &PW1
+                                          &trans  &trans  &trans    &trans           &trans           &none
             >;
         };
     };
