@@ -90,10 +90,10 @@
 
         NUM {
             bindings = <
-              &none         &none         &trans  &trans  &trans    &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
-              &trans        &trans        &trans  &trans  &trans    &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp LEFT      &kp RIGHT
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none   &trans  &trans    &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp NUMBER_0  &trans     &PW1
-                                          &trans  &trans  &trans    &trans           &trans           &none
+              &bt BT_CLR_ALL  &none         &trans  &trans  &trans    &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
+              &trans          &trans        &trans  &trans  &trans    &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp LEFT      &kp RIGHT
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &none   &trans  &trans    &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp NUMBER_0  &trans     &PW1
+                                            &trans  &trans  &trans    &trans           &trans           &none
             >;
         };
     };
