@@ -28,16 +28,6 @@
             key-positions = <0 1>;
         };
 
-        Basic_Layer {
-            bindings = <&to 0>;
-            key-positions = <36 26>;
-        };
-
-        Second_Layer {
-            bindings = <&to 1>;
-            key-positions = <36 27>;
-        };
-
         TAB_combo {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
@@ -46,6 +36,8 @@
         ENTER_combo {
             bindings = <&kp ENTER>;
             key-positions = <16 17>;
+            require-prior-idle-ms = <120>;
+            timeout-ms = <50>;
         };
 
         DEL_combo {
