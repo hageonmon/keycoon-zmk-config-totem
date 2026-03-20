@@ -115,10 +115,10 @@
 
         base {
             bindings = <
-                &ht TILDE Q     &kp W  &kp E               &kp R  &ht LS(T) T    &kp Y          &kp U  &kp I      &kp O    &kp P
-                &hr LEFT_ALT A  &kp S  &hr LEFT_CONTROL D  &kp F  &kp G          &kp H          &kp J  &kp K      &kp L    &kp SEMI
-&kp LEFT_SHIFT  &kp Z           &kp X  &kp C               &kp V  &kp B          &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
-                                       &kp LEFT_GUI        &none  &kp SPACE      &kp BACKSPACE  &mo 1  &none
+                &ht TILDE Q     &kp W  &kp E               &kp R  &kp T        &kp Y          &kp U  &kp I      &kp O    &kp P
+                &hr LEFT_ALT A  &kp S  &hr LEFT_CONTROL D  &kp F  &kp G        &kp H          &kp J  &kp K      &kp L    &kp SEMI
+&kp LEFT_SHIFT  &kp Z           &kp X  &kp C               &kp V  &kp B        &kp N          &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp MINUS
+                                       &kp LEFT_GUI        &none  &kp SPACE    &kp BACKSPACE  &mo 1  &none
             >;
         };
 
