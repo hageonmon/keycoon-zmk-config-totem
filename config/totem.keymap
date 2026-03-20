@@ -66,7 +66,7 @@
         };
 
         copy_paste {
-            bindings = <&mt LC(V) LC(C)>;
+            bindings = <&ht LC(V) LC(C)>;
             key-positions = <12 24>;
         };
     };
@@ -105,6 +105,17 @@
             #binding-cells = <0>;
             bindings = <&PW2>, <&PW1>;
         };
+
+        ht: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <130>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -121,9 +132,9 @@
 
         NUM {
             bindings = <
-              &bt BT_CLR_ALL  &none         &trans  &trans  &trans    &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
-              &trans          &trans        &trans  &trans  &trans    &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp LEFT      &kp RIGHT
-&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &none   &trans  &trans    &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp NUMBER_0  &trans     &td
+              &bt BT_CLR_ALL  &none         &trans  &trans  &trans    &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
+              &trans          &trans        &trans  &trans  &trans    &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT      &kp RIGHT
+&bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &none   &trans  &trans    &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp NUMBER_0  &trans     &td
                                             &trans  &trans  &trans    &trans           &trans           &none
             >;
         };
