@@ -129,10 +129,10 @@
 
         NUM {
             bindings = <
-                &none   &none   &trans  &trans  &trans    &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
-                &trans  &trans  &trans  &trans  &trans    &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT      &kp RIGHT
-&kp LEFT_SHIFT  &none   &none   &none   &trans  &trans    &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp NUMBER_0  &trans     &td
-                                &trans  &trans  &trans    &trans           &trans           &none
+                &none   &none   &trans  &trans  &trans       &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &kp UP_ARROW  &kp DOWN
+                &trans  &trans  &trans  &trans  &trans       &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT      &kp RIGHT
+&kp LEFT_SHIFT  &none   &none   &none   &trans  &trans       &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp DOT       &trans     &td
+                                &trans  &trans  &kp SPACE    &kp BACKSPACE    &trans           &kp NUMBER_0
             >;
         };
 
