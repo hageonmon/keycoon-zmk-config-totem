@@ -52,6 +52,23 @@
             bindings = <&kp DEL>;
             key-positions = <35 36>;
         };
+
+        to_layer_1 {
+            bindings = <&to 1>;
+            key-positions = <36 37>;
+            layers = <0>;
+        };
+
+        to_layer_0 {
+            bindings = <&to 0>;
+            key-positions = <36 37>;
+            layers = <1>;
+        };
+
+        copy_paste {
+            bindings = <&mt LC(V) LC(C)>;
+            key-positions = <12 24>;
+        };
     };
 
     macros {
