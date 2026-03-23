@@ -128,7 +128,7 @@
             bindings = <
                 &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T    &kp Y          &kp U  &kp I      &ht LS(O) O  &ht LS(P) P
                 &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &kp G          &kp H          &kp J  &kp K      &kp L        &kp SEMI
-&kp LEFT_SHIFT  &kp Z           &kp X        &kp C               &kp V        &kp B          &kp N          &kp M  &kp COMMA  &kp DOT      &kp FSLH     &kp MINUS
+&kp LEFT_SHIFT  &kp Z           &kp X        &kp C               &kp V        &kp B          &kp N          &kp M  &kp COMMA  &kp DOT      &ht LS(FSLH) FSLH  &kp MINUS
                                              &kp LEFT_GUI        &mo 1        &kp SPACE      &kp BACKSPACE  &none  &none
             >;
         };
