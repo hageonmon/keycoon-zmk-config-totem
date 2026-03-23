@@ -26,11 +26,17 @@
         ESC_combo {
             bindings = <&kp ESC>;
             key-positions = <0 1>;
+            slow-release;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <120>;
         };
 
         TAB_combo {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
+            slow-release;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <120>;
         };
 
         ENTER_combo {
