@@ -21,6 +21,9 @@
         LANGchange_combo {
             bindings = <&kp LANG1>;
             key-positions = <17 18>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <120>;
+            layers = <0>;
         };
 
         ESC_combo {
@@ -34,7 +37,6 @@
         TAB_combo {
             bindings = <&kp TAB>;
             key-positions = <10 11>;
-            slow-release;
             timeout-ms = <40>;
             require-prior-idle-ms = <120>;
         };
@@ -49,6 +51,8 @@
         DEL_combo {
             bindings = <&kp DEL>;
             key-positions = <35 36>;
+            timeout-ms = <40>;
+            require-prior-idle-ms = <120>;
         };
 
         to_layer_1 {
@@ -88,6 +92,13 @@
             bindings = <&kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_1 &kp Q &kp EXCLAMATION &kp AT_SIGN>;
             label = "NEW_MACRO";
         };
+
+        PW3: PW3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AT_SIGN &kp E &kp L &kp V &kp H &kp X &kp K &kp D &kp L &kp A>;
+            label = "PW3";
+        };
     };
 
     behaviors {
@@ -106,7 +117,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAPDANCE";
             #binding-cells = <0>;
-            bindings = <&PW2>, <&PW1>;
+            bindings = <&PW2>, <&PW1>, <&PW3>;
+
+            tapping-term-ms = <300>;
         };
 
         ht: hold_tap {
