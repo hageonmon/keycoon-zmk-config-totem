@@ -139,28 +139,28 @@
 
         base {
             bindings = <
-                &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T    &kp Y          &kp U  &kp I      &ht LS(O) O  &ht LS(P) P
-                &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &kp G          &kp H          &kp J  &kp K      &kp L        &kp SEMI
-&kp LEFT_SHIFT  &kp Z           &kp X        &kp C               &kp V        &kp B          &kp N          &kp M  &kp COMMA  &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
-                                             &kp LEFT_GUI        &mo 1        &kp SPACE      &kp BACKSPACE  &none  &none
+                &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T    &kp Y          &kp U   &kp I      &ht LS(O) O  &ht LS(P) P
+                &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &kp G          &kp H          &kp J   &kp K      &kp L        &kp SEMI
+&kp LEFT_SHIFT  &kp Z           &kp X        &kp C               &kp V        &kp B          &kp N          &kp M   &kp COMMA  &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
+                                             &kp LEFT_GUI        &mo 1        &kp SPACE      &kp BACKSPACE  &trans  &trans
             >;
         };
 
         NUM {
             bindings = <
-                &kp TILDE  &none   &trans  &trans            &trans               &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &kp UP_ARROW    &kp DOWN
+                &kp TILDE  &trans  &trans  &trans            &trans               &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &kp UP_ARROW    &kp DOWN
                 &trans     &trans  &td     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_ARROW  &kp RIGHT
-&kp LEFT_SHIFT  &none      &none   &none   &trans            &kp SQT              &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp DOT         &trans     &none
-                                   &trans  &trans            &kp SPACE            &kp BACKSPACE    &none            &kp NUMBER_0
+&kp LEFT_SHIFT  &trans     &trans  &trans  &trans            &kp SQT              &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp DOT         &trans     &trans
+                                   &trans  &trans            &kp SPACE            &kp BACKSPACE    &trans           &kp NUMBER_0
             >;
         };
 
         Bluetooth {
             bindings = <
-        &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans        &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-                              &trans        &trans        &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &bt BT_CLR_ALL
+                        &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
     };
