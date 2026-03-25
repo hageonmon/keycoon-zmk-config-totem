@@ -99,6 +99,13 @@
             bindings = <&kp AT_SIGN &kp E &kp L &kp V &kp H &kp X &kp K &kp D &kp L &kp A>;
             label = "PW3";
         };
+
+        mail: mail {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp O &kp F &kp F &kp I &kp C &kp E &kp D &kp E &kp P &kp O &kp T &kp DOT &kp C &kp O &kp DOT &kp K &kp R>;
+            label = "MAIL";
+        };
     };
 
     behaviors {
@@ -113,9 +120,9 @@
             flavor = "tap-preferred";
         };
 
-        td: tapdance {
+        td1: tapdance1 {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE";
+            label = "TAPDANCE1";
             #binding-cells = <0>;
             bindings = <&PW2>, <&PW1>, <&PW3>;
 
@@ -131,6 +138,14 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <130>;
             flavor = "tap-preferred";
+        };
+
+        td2: tapdance2 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAPDANCE2";
+            #binding-cells = <0>;
+            bindings = <&mail>;
+            tapping-term-ms = <300>;
         };
     };
 
@@ -149,7 +164,7 @@
         NUM {
             bindings = <
                 &kp TILDE  &trans  &trans  &trans            &trans               &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &kp UP_ARROW    &kp DOWN
-                &trans     &trans  &td     &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_ARROW  &kp RIGHT
+                &trans     &td2    &td1    &kp LEFT_BRACKET  &kp RIGHT_BRACKET    &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_ARROW  &kp RIGHT
 &kp LEFT_SHIFT  &trans     &trans  &trans  &trans            &kp SQT              &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp DOT         &trans     &trans
                                    &trans  &trans            &kp SPACE            &kp BACKSPACE    &trans           &kp NUMBER_0
             >;
