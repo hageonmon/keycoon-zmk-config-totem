@@ -50,7 +50,7 @@
 
         DEL_combo {
             bindings = <&kp DEL>;
-            key-positions = <35 36>;
+            key-positions = <31 30>;
             timeout-ms = <40>;
             require-prior-idle-ms = <120>;
         };
