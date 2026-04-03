@@ -156,15 +156,6 @@
             bindings = <&mail>;
             tapping-term-ms = <300>;
         };
-
-        td3: tapdance3 {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAPDANCE3";
-            #binding-cells = <0>;
-            bindings = <&kp LEFT_ARROW>, <&ht LS(LEFT_ARROW) LEFT>;
-
-            tapping-term-ms = <300>;
-        };
     };
 
     keymap {
@@ -172,19 +163,19 @@
 
         base {
             bindings = <
-              &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T    &kp Y              &kp U          &kp I      &ht LS(O) O  &ht LS(P) P
-              &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &kp G          &kp H              &kp J          &kp K      &kp L        &kp SEMI
-&kp LEFT_WIN  &kp Z           &kp X        &kp C               &kp V        &kp B          &ht EXCLAMATION N  &ht AT_SIGN M  &kp COMMA  &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
-                                           &kp LEFT_SHIFT      &mo 1        &kp SPACE      &kp BACKSPACE      &trans         &trans
+              &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T    &kp Y              &kp U          &kp I            &ht LS(O) O  &ht LS(P) P
+              &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &kp G          &kp H              &kp J          &kp K            &kp L        &kp SEMI
+&kp LEFT_WIN  &kp Z           &kp X        &kp C               &kp V        &kp B          &ht EXCLAMATION N  &ht AT_SIGN M  &kp COMMA        &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
+                                           &kp LEFT_SHIFT      &mo 1        &kp SPACE      &kp BACKSPACE      &trans         &kp RIGHT_SHIFT
             >;
         };
 
         NUM {
             bindings = <
-        &kp TILDE  &trans  &kp UP_ARROW    &trans           &trans       &trans         &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &ht BACKSLASH EQUAL
-        &trans     &td3    &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &trans         &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_BRACKET
-&trans  &trans     &trans  &trans          &td2             &td1         &trans         &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp RIGHT_BRACKET    &kp SINGLE_QUOTE
-                           &kp LEFT_SHIFT  &trans           &kp SPACE    &kp BACKSPACE  &kp NUMBER_0     &trans
+        &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans                 &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &ht BACKSLASH EQUAL
+        &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans       &kp LEFT_PARENTHESIS   &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_BRACKET
+&trans  &trans     &trans          &trans          &td2             &td1         &kp RIGHT_PARENTHESIS  &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp RIGHT_BRACKET    &kp SINGLE_QUOTE
+                                   &kp LEFT_SHIFT  &trans           &kp SPACE    &kp BACKSPACE          &kp NUMBER_0     &trans
             >;
         };
 
