@@ -13,7 +13,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -175,7 +174,7 @@
             bindings = <
         &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans                 &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &ht BACKSLASH EQUAL
         &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &kp LEFT_PARENTHESIS   &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_BRACKET
-&trans  &trans     &msc SCRL_LEFT  &trans          &msc SCRL_RIGHT  &td1         &kp RIGHT_PARENTHESIS  &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp RIGHT_BRACKET    &kp SINGLE_QUOTE
+&trans  &trans     &trans          &trans          &trans           &td1         &kp RIGHT_PARENTHESIS  &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp RIGHT_BRACKET    &kp SINGLE_QUOTE
                                    &kp LEFT_SHIFT  &trans           &kp SPACE    &kp BACKSPACE          &kp NUMBER_0     &trans
             >;
         };
