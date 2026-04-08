@@ -50,9 +50,10 @@
 
         DEL_combo {
             bindings = <&kp DEL>;
-            key-positions = <31 30>;
+            key-positions = <26 27>;
             timeout-ms = <40>;
             require-prior-idle-ms = <120>;
+            layers = <0>;
         };
 
         to_layer_1 {
@@ -84,6 +85,14 @@
             key-positions = <12 24>;
             timeout-ms = <50>;
             require-prior-idle-ms = <120>;
+        };
+
+        F2_Combo {
+            bindings = <&kp F2>;
+            key-positions = <19 18>;
+            timeout-ms = <50>;
+            require-prior-idle-ms = <120>;
+            layers = <0>;
         };
     };
 
@@ -161,7 +170,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base {
+        Base {
             bindings = <
                 &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T       &kp Y          &kp U              &kp I              &ht LS(O) O  &ht LS(P) P
                 &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &hr LEFT_GUI G    &kp H          &kp J              &kp K              &kp L        &kp SEMI
@@ -172,10 +181,10 @@
 
         NUM {
             bindings = <
-                &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &ht LS(SINGLE_QUOTE) SINGLE_QUOTE
-                &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &ht LS(BACKSLASH) BACKSLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &ht LS(LEFT_BRACKET) LEFT_BRACKET
-&kp LEFT_SHIFT  &trans     &trans          &trans          &trans           &td1         &ht LS(EQUAL) EQUAL          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &ht LS(RIGHT_BRACKET) RIGHT_BRACKET  &trans
-                                           &trans          &trans           &kp SPACE    &kp BACKSPACE                &kp NUMBER_0  &trans
+        &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &ht LS(SINGLE_QUOTE) SINGLE_QUOTE
+        &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &ht LS(BACKSLASH) BACKSLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &ht LS(LEFT_BRACKET) LEFT_BRACKET
+&trans  &trans     &trans          &trans          &trans           &td1         &ht LS(EQUAL) EQUAL          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &ht LS(RIGHT_BRACKET) RIGHT_BRACKET  &trans
+                                   &trans          &trans           &kp SPACE    &kp BACKSPACE                &kp NUMBER_0  &trans
             >;
         };
 
