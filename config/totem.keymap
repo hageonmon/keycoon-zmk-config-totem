@@ -75,7 +75,7 @@
         };
 
         momentary_layer_3 {
-            bindings = <&mo 2>;
+            bindings = <&mo 3>;
             key-positions = <20 21>;
         };
 
@@ -166,16 +166,25 @@
         &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T       &kp Y          &kp U              &kp I              &ht LS(O) O  &ht LS(P) P
         &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &hr LEFT_GUI G    &kp H          &kp J              &kp K              &kp L        &kp SEMI
 &trans  &kp Z           &kp X        &kp C               &kp V        &kp B             &kp N          &ht EXCLAMATION M  &ht AT_SIGN COMMA  &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
-                                     &kp LEFT_SHIFT      &mo 1        &kp SPACE         &kp BACKSPACE  &trans             &kp RIGHT_SHIFT
+                                     &mo 2               &mo 1        &kp SPACE         &kp BACKSPACE  &kp RIGHT_SHIFT    &trans
             >;
         };
 
         NUM {
             bindings = <
-        &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans                 &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &ht BACKSLASH EQUAL
-        &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &kp LEFT_PARENTHESIS   &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_BRACKET
-&trans  &trans     &trans          &trans          &trans           &td1         &kp RIGHT_PARENTHESIS  &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp RIGHT_BRACKET    &kp SINGLE_QUOTE
-                                   &kp LEFT_SHIFT  &trans           &kp SPACE    &kp BACKSPACE          &kp NUMBER_0     &trans
+        &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans         &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &ht BACKSLASH EQUAL
+        &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &trans         &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_BRACKET
+&trans  &trans     &trans          &trans          &trans           &td1         &trans         &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp RIGHT_BRACKET    &kp SINGLE_QUOTE
+                                   &trans          &trans           &kp SPACE    &kp BACKSPACE  &kp NUMBER_0     &trans
+            >;
+        };
+
+        ETC {
+            bindings = <
+        &trans  &trans              &kp LS(UP_ARROW)    &trans               &trans       &trans         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
+        &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
+&trans  &trans  &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
+                                    &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
             >;
         };
 
