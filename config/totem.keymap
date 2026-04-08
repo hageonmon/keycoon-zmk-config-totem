@@ -75,7 +75,7 @@
         };
 
         momentary_layer_3 {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <20 21>;
         };
 
@@ -172,10 +172,10 @@
 
         NUM {
             bindings = <
-                &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans         &ht F7 NUMBER_7  &ht F8 NUMBER_8  &ht F9 NUMBER_9  &kp SINGLE_QUOTE
-                &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &kp BACKSLASH  &ht F4 NUMBER_4  &ht F5 NUMBER_5  &ht F6 NUMBER_6  &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &trans     &trans          &trans          &trans           &td1         &kp EQUAL      &ht F1 NUMBER_1  &ht F2 NUMBER_2  &ht F3 NUMBER_3  &kp RIGHT_BRACKET  &trans
-                                           &trans          &trans           &kp SPACE    &kp BACKSPACE  &kp NUMBER_0     &trans
+                &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp SINGLE_QUOTE
+                &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &kp BACKSLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp LEFT_BRACKET
+&kp LEFT_SHIFT  &trans     &trans          &trans          &trans           &td1         &kp EQUAL      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp RIGHT_BRACKET  &trans
+                                           &trans          &trans           &kp SPACE    &kp BACKSPACE  &kp NUMBER_0  &trans
             >;
         };
 
@@ -185,6 +185,15 @@
         &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
 &trans  &trans  &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
                                     &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
+            >;
+        };
+
+        Function {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans   &kp F7   &kp F8  &kp F9  &trans
+        &trans  &trans  &trans  &trans  &trans    &kp F12  &kp F4   &kp F5  &kp F6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F1   &kp F2  &kp F3  &trans  &trans
+                        &trans  &trans  &trans    &trans   &kp F10  &trans
             >;
         };
 
@@ -198,5 +207,12 @@
         };
     };
 
-    conditional_layers { compatible = "zmk,conditional-layers"; };
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        Function_layer {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+    };
 };
