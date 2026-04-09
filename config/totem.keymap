@@ -82,6 +82,16 @@
             require-prior-idle-ms = <120>;
             layers = <0>;
         };
+
+        Shift+T {
+            bindings = <&kp LS(T)>;
+            key-positions = <4 3>;
+        };
+
+        Shift+P {
+            bindings = <&kp LS(P)>;
+            key-positions = <9 8>;
+        };
     };
 
     macros {
