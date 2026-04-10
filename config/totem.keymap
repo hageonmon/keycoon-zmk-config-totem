@@ -95,7 +95,7 @@
         PW2: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_1 &kp Q &kp EXCLAMATION &kp AT_SIGN>;
+            bindings = <&kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_2 &kp NUMBER_2 &kp NUMBER_0 &kp NUMBER_9 &kp NUMBER_0 &kp NUMBER_1 &kp Q &kp EXCLAMATION &kp AT_SIGN &kp HASH>;
             label = "NEW_MACRO";
         };
 
