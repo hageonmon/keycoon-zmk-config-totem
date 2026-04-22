@@ -13,6 +13,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -63,8 +64,8 @@
             require-prior-idle-ms = <120>;
         };
 
-        momentary_layer_3 {
-            bindings = <&mo 4>;
+        momentary_layer_5 {
+            bindings = <&mo 5>;
             key-positions = <20 21>;
         };
 
@@ -160,10 +161,10 @@
 
         Base {
             bindings = <
-                &ht LS(Q) Q     &ht LS(W) W  &ht LS(E) E         &ht LS(R) R  &ht LS(T) T       &kp Y          &kp U              &kp I              &ht LS(O) O  &ht LS(P) P
-                &hr LEFT_ALT A  &kp S        &hr LEFT_CONTROL D  &kp F        &hr LEFT_GUI G    &kp H          &kp J              &kp K              &kp L        &kp SEMI
-&kp LEFT_SHIFT  &kp Z           &kp X        &kp C               &kp V        &kp B             &kp N          &ht EXCLAMATION M  &ht AT_SIGN COMMA  &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
-                                             &mo 2               &mo 1        &kp SPACE         &kp BACKSPACE  &kp RIGHT_SHIFT    &trans
+       &ht LS(Q) Q     &ht LS(W) W       &ht LS(E) E         &ht LS(R) R  &ht LS(T) T       &kp Y          &kp U              &kp I              &ht LS(O) O  &ht LS(P) P
+       &hr LEFT_ALT A  &hr LEFT_SHIFT S  &hr LEFT_CONTROL D  &kp F        &hr LEFT_GUI G    &kp H          &kp J              &kp K              &kp L        &kp SEMI
+&mo 4  &kp Z           &kp X             &kp C               &kp V        &kp B             &kp N          &ht EXCLAMATION M  &ht AT_SIGN COMMA  &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
+                                         &mo 2               &mo 1        &kp SPACE         &kp BACKSPACE  &kp RIGHT_SHIFT    &trans
             >;
         };
 
@@ -191,6 +192,15 @@
         &trans  &trans  &trans  &trans  &trans    &kp F12  &kp F4   &kp F5  &kp F6  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F1   &kp F2  &kp F3  &trans  &trans
                         &trans  &trans  &trans    &trans   &kp F10  &trans
+            >;
+        };
+
+        Mouse {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans          &trans          &mmv MOVE_UP    &trans          &trans
+        &trans  &trans  &trans  &trans  &trans    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_LEFT  &msc SCRL_RIGHT
+&trans  &trans  &trans  &trans  &trans  &trans    &trans          &trans          &trans          &trans          &trans           &trans
+                        &trans  &trans  &trans    &trans          &mkp LCLK       &mkp RCLK
             >;
         };
 
