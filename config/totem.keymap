@@ -49,14 +49,6 @@
             timeout-ms = <50>;
         };
 
-        DEL_combo {
-            bindings = <&kp DEL>;
-            key-positions = <26 27>;
-            timeout-ms = <40>;
-            require-prior-idle-ms = <120>;
-            layers = <0>;
-        };
-
         copy {
             bindings = <&kp LC(C)>;
             key-positions = <12 13>;
@@ -179,10 +171,10 @@
 
         ETC {
             bindings = <
-        &trans  &trans              &kp LS(UP_ARROW)    &trans               &trans       &trans         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
-        &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
-&trans  &trans  &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
-                                    &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
+                       &trans  &trans              &kp LS(UP_ARROW)    &trans               &trans       &trans         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
+                       &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
+&ht LS(DELETE) DELETE  &trans  &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
+                                                   &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
             >;
         };
 
@@ -197,10 +189,10 @@
 
         Mouse {
             bindings = <
-        &msc MOVE_X(5)  &trans          &msc SCRL_UP    &trans           &mmv MOVE_X(300)    &trans          &trans          &mmv MOVE_UP    &trans           &trans
-        &msc MOVE_Y(5)  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &mmv MOVE_Y(300)    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
-&trans  &trans          &trans          &trans          &trans           &trans              &trans          &trans          &trans          &trans           &trans           &trans
-                                        &trans          &trans           &trans              &trans          &mkp LCLK       &mkp RCLK
+        &trans  &trans          &msc SCRL_UP    &trans           &mmv MOVE_X(600)    &trans          &trans          &mmv MOVE_UP    &trans           &trans
+        &trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &mmv MOVE_Y(600)    &msc SCRL_LEFT  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_RIGHT
+&trans  &trans  &trans          &trans          &trans           &trans              &trans          &trans          &trans          &trans           &trans           &trans
+                                &trans          &trans           &trans              &trans          &mkp LCLK       &mkp RCLK
             >;
         };
 
