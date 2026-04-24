@@ -67,14 +67,6 @@
             timeout-ms = <50>;
             require-prior-idle-ms = <120>;
         };
-
-        F2_Combo {
-            bindings = <&kp F2>;
-            key-positions = <19 18>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <120>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -171,16 +163,16 @@
 
         ETC {
             bindings = <
-                       &trans  &trans              &kp LS(UP_ARROW)    &trans               &trans       &trans         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
-                       &trans  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
-&ht LS(DELETE) DELETE  &trans  &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
-                                                   &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
+                       &trans     &trans              &kp LS(UP_ARROW)    &trans               &trans       &trans         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
+                       &ht F5 F2  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
+&ht LS(DELETE) DELETE  &trans     &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
+                                                      &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
             >;
         };
 
         Function {
             bindings = <
-        &trans  &trans  &kp F5  &trans  &trans    &trans   &kp F7   &kp F8  &kp F9  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans   &kp F7   &kp F8  &kp F9  &trans
         &trans  &trans  &trans  &trans  &trans    &kp F12  &kp F4   &kp F5  &kp F6  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F1   &kp F2  &kp F3  &trans  &trans
                         &trans  &trans  &trans    &trans   &kp F10  &trans
