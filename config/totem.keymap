@@ -145,16 +145,16 @@
 
         Base {
             bindings = <
-       &ht LS(Q) Q     &ht LS(W) W       &ht LS(E) E         &ht LS(R) R  &ht LS(T) T       &kp Y          &kp U              &kp I              &ht LS(O) O  &ht LS(P) P
-       &hr LEFT_ALT A  &hr LEFT_SHIFT S  &hr LEFT_CONTROL D  &kp F        &hr LEFT_GUI G    &kp H          &kp J              &kp K              &kp L        &kp SEMI
-&mo 4  &kp Z           &kp X             &kp C               &kp V        &kp B             &kp N          &ht EXCLAMATION M  &ht AT_SIGN COMMA  &kp DOT      &ht LS(FSLH) FSLH  &ht LS(MINUS) MINUS
-                                         &mo 2               &mo 1        &kp SPACE         &kp BACKSPACE  &kp RIGHT_SHIFT    &trans
+        &ht LS(Q) Q     &ht LS(W) W       &ht LS(E) E         &ht LS(R) R  &ht LS(T) T       &kp Y          &kp U              &kp I              &ht LS(O) O  &ht LS(P) P
+        &hr LEFT_ALT A  &hr LEFT_SHIFT S  &hr LEFT_CONTROL D  &kp F        &hr LEFT_GUI G    &kp H          &kp J              &kp K              &kp L        &kp SEMI
+&trans  &kp Z           &kp X             &kp C               &kp V        &kp B             &kp N          &ht EXCLAMATION M  &ht AT_SIGN COMMA  &kp DOT      &ht LS(FSLH) FSLH  &trans
+                                          &mo 2               &mo 1        &kp SPACE         &kp BACKSPACE  &kp RIGHT_SHIFT    &trans
             >;
         };
 
         NUM {
             bindings = <
-        &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &trans                       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &ht LS(SINGLE_QUOTE) SINGLE_QUOTE
+        &kp TILDE  &trans          &kp UP_ARROW    &trans           &trans       &ht LS(MINUS) MINUS          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &ht LS(SINGLE_QUOTE) SINGLE_QUOTE
         &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &td2         &ht LS(BACKSLASH) BACKSLASH  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &ht LS(LEFT_BRACKET) LEFT_BRACKET
 &trans  &trans     &trans          &trans          &trans           &td1         &ht LS(EQUAL) EQUAL          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &ht LS(RIGHT_BRACKET) RIGHT_BRACKET  &trans
                                    &trans          &trans           &kp SPACE    &kp BACKSPACE                &kp NUMBER_0  &trans
@@ -163,10 +163,10 @@
 
         ETC {
             bindings = <
-                       &trans     &trans              &kp LS(UP_ARROW)    &trans               &trans       &trans         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &trans
-                       &ht F5 F2  &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &trans
-&ht LS(DELETE) DELETE  &trans     &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &trans  &trans
-                                                      &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
+        &ht LS(DELETE) DELETE  &trans              &kp LS(UP_ARROW)    &trans               &trans       &trans         &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)  &kp PLUS
+        &ht F5 F2              &kp LS(LEFT_ARROW)  &kp LS(DOWN_ARROW)  &kp LS(RIGHT_ARROW)  &trans       &trans         &kp LS(NUMBER_4)  &kp LS(NUMBER_5)  &kp LS(NUMBER_6)  &kp MINUS
+&trans  &trans                 &trans              &trans              &trans               &trans       &trans         &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp KP_DIVIDE  &kp KP_MULTIPLY
+                                                   &trans              &trans               &kp SPACE    &kp BACKSPACE  &kp LS(NUMBER_0)  &trans
             >;
         };
 
